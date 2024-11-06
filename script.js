@@ -4,14 +4,14 @@ const createBtn = document.querySelector(".btn");
 let notes = document.querySelectorAll(".input-box");
 
 function showNotes(){
-    notesContainer.innerHTML = localstorage.getItem("notes");
+    notesContainer.innerHTML = localStorage.getItem("notes");
 }
 
 function updateStorage(){
     localStorage.setItem("notes", notesContainer.innerHTML);
 }
 
-showNotes()
+showNotes();
 
 createBtn.addEventListener("click", ()=>{
     let inputBox = document.createElement("p");
