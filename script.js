@@ -11,6 +11,8 @@ function updateStorage(){
     localStorage.setItem("notes", notesContainer.innerHTML);
 }
 
+showNotes()
+
 createBtn.addEventListener("click", ()=>{
     let inputBox = document.createElement("p");
     let img = document.createElement("img");
