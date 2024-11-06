@@ -3,6 +3,10 @@ const createBtn = document.querySelector(".btn");
 
 let notes = document.querySelectorAll(".input-box");
 
+function showNotes(){
+    notesContainer.innerHTML = localstorage.getItem("notes");
+}
+
 function updateStorage(){
     localStorage.setItem("notes", notesContainer.innerHTML);
 }
